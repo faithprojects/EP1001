@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronic Design</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="container">
+        <div class="my-logo"><img src="images/faith_newlogo.png" alt="faith logo"></div>
+        <div id="nav">
+            
+            <ul class="list">
+                
+                <li class = "item"><a href = "index.html">Home</a></li>
+                <li class = "item"><a href = "about.html">About Me</a></li>
+                <li class = "item"><a href = "tools.html">Tools</a></li>
+                <li class = "item"><a href = "projects.html">Projects</a></li>
+                
+            </ul>
+
+        </div>
+
+        <div id="content-elec-design">
+            <div id="bookmark-nav">
+                <h2><a class="book-nav" href="#D1">Electronic Design</a></h2>
+                <h2><a class="book-nav" href="#D2">What is EAGLE?</a></h2>
+                <h2><a class="book-nav" href="#D3">Let's Get Started: Adding Libraries</a></h2>
+                <h2><a class="book-nav" href="#D4">Creating a New Project</a></h2>
+                <h2><a class="book-nav" href="#D5">Converting from Schematic to PCB</a></h2>
+                <h2><a class="book-nav" href="#D6">Editing the Finished PCB board using GIMP</a></h2>
+                <h2><a class="book-nav" href="#D7">Finished product after miling and soldering</a></h2>
+            </div>
+
+            <div id="header-elec-design">
+                <h1 id="D1">Electronic Design</h1>
+            </div>
+
+            <div id="main-elec-design">
+                <p>On the third and fourth week, Mr Chew taught us how to design our own circuit using EAGLE software and how to be able to convert the schematic design into a PCB design and then mill out the design.</p>
+
+                <p>We will be following the ATTiny-412 hellow world board schematic but we will add a LED and switch to the schematic</p>
+                <img src="images/Electronic_design/schematic.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+
+                <div id="D2">
+                    <h2>What is EAGLE?</h2>
+                    <p>EAGLE is a software where you can create your own circuits.</p>
+                </div>
+
+                <div id="D3">
+                    <h2>Let's Get Started: Adding Libraries</h2>
+                    <h3>Fab Library</h3>
+                    <ol>
+                        <li>Click this link to bring you to gitlab fab library</li>
+                        <li>Click onto eagle &gt; fab.lbr</li>
+                        <img src="images/Electronic_design/L1_gitlab.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                        <li>Then download the fab.lbr file</li>
+                        <img src="images/Electronic_design/L1_fablbr.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                        <li>Put the file into your file explorer under the folder EAGLE &gt; libraries</li>
+                        <img src="images/Electronic_design/L1_fileexplorer.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                    </ol>
+                    <h3>Adafruit (Eagle Library)</h3>
+                    <ol>
+                        <li>Click this link to bring you to github of adafruit library</li>
+                        <li>Click onto the arrow next to code and download the zip folder</li>
+                        <img src="images/Electronic_design/L2_github.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Then unzip the folder and put it into your file explorer under the folder EAGLE &gt; libraries</li>
+                        <img src="images/Electronic_design/L2_fileexplorer.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                    </ol>
+                    <h3>SparkFun (Eagle Library)</h3>
+                    <ol>
+                        <li>Click this link to bring you to github of SparkFun library</li>
+                        <li>Click onto the arrow next to code and download the zip folder</li>
+                        <img src="images/Electronic_design/L3_github.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Then unzip the folder and put it into your file explorer under the folder EAGLE &gt; libraries</li>
+                        <img src="images/Electronic_design/L3_fileexplorer.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                    </ol>
+
+                    <h3>Pinhead+ Library</h3>
+                    <ol>
+                        <li>Click this link to bring you to the website</li>
+                        <li>Click onto download Pinhead+ library</li>
+                        <img src="images/Electronic_design/L4_pinhead.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Then unzip the folder and put it into your file explorer under the folder EAGLE &gt; libraries</li>
+                        <img src="images/Electronic_design/L4_fileexplorer.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                    </ol>
+                    <h3>How to use the library</h3>
+                    <p>Open your Eagles software and under libraries open the folder and right click the library you want to use and select use</p>
+                    <img src="images/Electronic_design/U1.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                </div>
+
+                <div id="D4">
+                    <h2>Creating a New Project</h2>
+                    <ol>
+                        <li>Right click new project &gt; Type the name of the project</li>
+                        <img src="images/Electronic_design/new_project.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Right click the new project you just named and go to new &gt; schematic</li>
+                        <img src="images/Electronic_design/new_schematic.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>To change your cursor and background go to options &gt; user interface &gt; cursor: large and background: black or up to you to change the layout and the schematic</li>
+                        <img src="images/Electronic_design/changing_cursor.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Next go to grid &gt; display: on &gt; style:lines and the rest of the settings as shown</li>
+                        <div class="elec-design-images">
+                            <div class="FTDI-traces">
+                                <img src="images/Electronic_design/grid.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/Electronic_design/grid_settings.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>Now you want to add the frame so go to add parts &gt; type in the search asterisk frame asterisk and look for A4L-LOC</li>
+                        <div class="elec-design-images">
+                            <div class="FTDI-traces">
+                                <img src="images/Electronic_design/add_parts.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/Electronic_design/frame.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>Using the origin plus sign, place your frame at the corner of the origin, now you can do your schematic in the frame</li>
+                        <img src="images/Electronic_design/add_frame_origin.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Following the schematic above find the components as follows, make sure the components has footprints</li>
+                        <div class="elec-design-images">
+                            <div class="FTDI-traces">
+                                <h3>Tiny412 Chip</h3>
+                                <p>Search: &lowast;tiny412&lowast; <br>Name: ATTINY412-SSN</p>
+                                <img src="images/Electronic_design/P_tiny412.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <h3>Resistor x2</h3>
+                                <p>Find the folder fab &gt; R &gt; R1206FAB</p>
+                                <img src="images/Electronic_design/P_resistors.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+
+                            <div class="FTDI-outline">
+                                <h3>Switch</h3>
+                                <p>Find the folder fab &gt; SW_SWITCH_TACTILE_6MM </p>
+                                <img src="images/Electronic_design/P_switch.png" alt="UPDI outline" class="heightimgwpad-50px" >
+                                
+                            </div>
+
+                            <div class="FTDI-outline">
+                                <h3>Capacitor Unpolarized</h3>
+                                <p>Find the folder fab &gt; CAP_UNPOLARIZED &gt; CAP_UNPOLARIZEDFAB</p>
+                                <img src="images/Electronic_design/P_cap.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+
+                            <div class="FTDI-outline">
+                                <h3>FTDI Connector</h3>
+                                <p>Find the folder fab &gt; CONN_06_FTDI-SMD-HEADER</p>
+                                <img src="images/Electronic_design/P_FTDIconn.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+
+                            <div class="FTDI-outline">
+                                <h3>UPDI Connector</h3>
+                                <p>Find the folder pinhead+ &gt; PINHD-1X3 &gt; PINHD - 1X3</p>
+                                <img src="images/Electronic_design/P_UPDIconn.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+
+                            <div class="FTDI-outline">
+                                <h3>VCC x3</h3>
+                                <p>Search: vcc <br> Folder: Supply1 &gt; VCC</p>
+                                <img src="images/Electronic_design/P_vcc.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+
+                            <div class="FTDI-outline">
+                                <h3>GND x4</h3>
+                                <p>Search: gnd <br> Folder: Supply1 &gt; GND</p>
+                                <img src="images/Electronic_design/P_gnd.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+
+                        <li>Once all the components are there, you can start wiring up your connections using the net icon. Leave a few nets unconnected which we will later label them for the RX and TX</li>
+
+                        <div class="elec-design-images">
+                            <div class="FTDI-traces">
+                                <img src="images/Electronic_design/net.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/Electronic_design/completed_nets.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+                        
+                        <li>Using Name icon, to name the unconnected labels to connect them tgt by naming them RX and TX respectively. You can also go and put the values for the resistor and capacitor.</li>
+                        <img src="images/Electronic_design/name_value.png" alt="FTDI traces" class="heightimg-270px" >
+                        
+                        <li>The finished circuit looks like this:</li>
+                        <img src="images/Electronic_design/finished_circuit.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>To check, go to tools &gt; ERC to check your circuit if your circuit has 0 errors then you are good to go, the warning you see on this screen is because I havent added any text to some of the components and the frame.</li>
+                        <div class="elec-design-images">
+                            <div class="FTDI-traces">
+                                <img src="images/Electronic_design/erc_check.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/Electronic_design/erc_errors.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>To add text to frame use the text icon</li>
+                        <div class="elec-design-images">
+                            <div class="FTDI-traces">
+                                <img src="images/Electronic_design/text.png" alt="FTDI traces" class="heightimgwpad-180px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/Electronic_design/framewtext.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+                    </ol>
+                </div>
+
+                <div id="D5">
+                    <h2>Converting from Schematic to PCB</h2>
+                    <ol>
+                        <li>Click the generate or switch to board icon to make the schematic circuit a pcb board</li>
+                        <img src="images/Electronic_design/sch_to_board.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Set your grid settings to display: on and style: lines</li>
+                        <img src="images/Electronic_design/grid_board.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Put all your components into the yellow box</li>
+                        <img src="images/Electronic_design/components_YellowBox.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Move around your components until you are satisfied and making sure when you add the tracks later that no tracks should be overlapping one another</li>
+                        <img src="images/Electronic_design/finish_movecomponents.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Once done, move the circuit the the bottom left corner with the white plus sign origin and make the yellow box smaller making sure you leave a 2 box gap around the circuit.</li>
+                        <img src="images/Electronic_design/shrink_yellowbox.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Once done let's set the design rules</li>
+                        <div class="elec-design-images">
+                            <div class="FTDI-traces">
+                                <h3>Clearance: 16mil for Wire, Pad, Via <br> Clearance: 12mil for Smd</h3>
+                                <img src="images/Electronic_design/clearance_drc.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <h3>Sizes Minimum Width: 15mil</h3>
+                                <img src="images/Electronic_design/size_drc.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+                        <li>once done using the route airware to route the connections but first adjust the route settings above</li>
+                        <img src="images/Electronic_design/route_settings.png" alt="UPDI outline" class="heightimgwpad-30px" >
+
+                        <li>Then route your connections using 45 degree angle</li>
+                        <img src="images/Electronic_design/45_finishedroute.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li> Once you are done, go to tools &gt; DRC &gt; check to check if there is any design errors, if no pop up window comes up means there is no errors</li>
+                        <img src="images/Electronic_design/design_rule.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>To make the outline, using the line tool adjust to the settings first before drawing the outline along the yellow line</li>
+                        <img src="images/Electronic_design/line_settings.png" alt="UPDI outline" class="heightimgwpad-30px" >
+                        <img src="images/Electronic_design/line_outline.png" alt="UPDI outline" class="heightimgwpad-270px" >
+
+                        <li>Using the milter tool, you can make rounded corners or straight using the following setting of R100 (Radius 100)</li>
+                        <img src="images/Electronic_design/milter_setting.png" alt="UPDI outline" class="heightimgwpad-50px" >
+                        <img src="images/Electronic_design/finishblue_outline.png" alt="UPDI outline" class="heightimgwpad-270px" >
+
+                        <li>To remove the text labeling go options &gt; set &gt; misc &gt; turn off display pad names and signal names on the pads and signal names on traces</li>
+                        <div class="elec-design-images">
+                            <div class="FTDI-traces">
+                                <img src="images/Electronic_design/option_set.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/Electronic_design/set_settings.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+
+                            <div class="FTDI-traces">
+                                <img src="images/Electronic_design/PCBDesign_coverpage.png" alt="before" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/Electronic_design/after_rmlabels.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>Next go to layer settings and hide all the layers and turn on only the top and pad layers, it should show only the traces and pads</li>
+                        <div class="elec-design-images">
+                            <div class="FTDI-traces">
+                                <img src="images/Electronic_design/layer_setting.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/Electronic_design/layer_traces.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>After you can export the traces and pads going to file &gt; export &gt; image, you change the resolution to 1000 and give it a file name and monochrome.</li>
+                        <div class="elec-design-images">
+                            <div class="FTDI-traces">
+                                <img src="images/Electronic_design/export_settings.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/Electronic_design/hello_traces.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>Go back to layer settings, hide all layers and turn on only miling layer</li>
+                        <div class="elec-design-images">
+                            <div class="FTDI-traces">
+                                <img src="images/Electronic_design/layer_setting2.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/Electronic_design/layer_outline.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+
+                        <li>Then export the outline doing the same steps as you did in Step 14</li>
+                        <img src="images/Electronic_design/hello_outline.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>You can turn on the following layers after you have exported the traces and outline</li>
+                        <li>You can check if your circuit is ok the outlines and traces in nc viewer website</li>
+                    </ol>
+                </div>
+
+                <div id="D6">
+                    <h2>Editing the Finished PCB board using GIMP</h2>
+                    <p>You can use GIMP to edit your exported traces & outline images. For this case we want to edit one of the jumpers to be a surface mount type instead of the through hole type that it is now.</p>
+                    <ol>
+                        <li>Open up GIMP software and open the traces file first file &gt; open</li>
+                        <img src="images/Electronic_design/open_traces.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>We need to change the through hole components to surface mount components</li>
+                        <img src="images/Electronic_design/Change_TH.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Using the magic wand tool, shift + select the 3 black holes</li>
+                        <div class="elec-design-images">
+                            <div class="FTDI-traces">
+                                <img src="images/Electronic_design/magic_wand.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/Electronic_design/magic_hole.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>Then go to edit &gt; Fill with BG Color to invert the black hole color to white</li>
+                        <img src="images/Electronic_design/invert_color.png" alt="UPDI outline" class="heightimgwpad-600px" >
+
+                        <li>Then go to select &gt; none to deselect the holes</li>
+                        <img src="images/Electronic_design/select_none.png" alt="UPDI outline" class="heightimgwpad-600px" >
+
+                        <li>Now you can go to file to either export as a new png file or override the existing file</li>
+                        <div class="elec-design-images">
+                            <div class="FTDI-traces">
+                                <img src="images/Electronic_design/overwrite_export_file.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/Electronic_design/finalhello_traces.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+                        <li>Now open the outline file</li>
+                        <img src="images/Electronic_design/open_outline.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>We now want to invert the inner black hole highlighted in green to white and the white outline around it to be black as black is the one that we want cut away and white is the parts we want to keep</li>
+                        <img src="images/Electronic_design/highlight_outline.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>So doing the same steps as step 3 to 5 invert the inner black hole first</li>
+                        <img src="images/Electronic_design/inverted_inner_black.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Then go to select &gt; invert</li>
+                        <img src="images/Electronic_design/select_invert.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Then go back to edit &gt; fill with FG Color to fill the white outline to be black</li>
+                        <img src="images/Electronic_design/inverted_outline_black.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>You can now export or overwrite the existing outline file and you are now ready to put it into mods website to prep for the files for miling</li>
+                        <img src="images/Electronic_design/finalhello_outline.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Refer to my electronic production to know more about how to use mods to prepare the file</li>
+                    </ol>
+                </div>
+
+                <div id="D7">
+                    <h2>Milling and Soldering Process</h2>
+                    <div class="elec-design-images">
+                        <div class="FTDI-traces">
+                            <h3>First Try</h3>
+                            <p>The copper board wasnt sticking to the sacrfical board and it was moving abit during the milling process.</p>
+                            <img src="images/Electronic_design/mill_fail1.jpg" alt="FTDI traces" class="heightimg-270px" >
+
+                        </div>
+
+                        <div class="FTDI-outline">
+                            <h3>Second Try</h3>
+                            <p>I made a wrong cut and it end up cutting the circuit that was already milled.</p>
+                            <img src="images/Electronic_design/mill_fail2.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+                            
+                        </div>
+
+                        <div class="FTDI-outline">
+                            <h3>Third Try</h3>
+                            <p>it cut out perfectly I guess third time is the charm!</p>
+                            <img src="images/Electronic_design/mill_success.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+                            
+                        </div>
+
+                    </div>
+                    <h3>After Soldering the final product</h3>
+                    <img src="images/Electronic_design/finished_soldering.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div id="footer">
+            Copyright &copy; 2022 Faith Kirsten De Vera.
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronic Production</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="container">
+        <div class="my-logo"><img src="images/faith_newlogo.png" alt="faith logo"></div>
+        <div id="nav">
+            
+            <ul class="list">
+                
+                <li class = "item"><a href = "index.html">Home</a></li>
+                <li class = "item"><a href = "about.html">About Me</a></li>
+                <li class = "item"><a href = "tools.html">Tools</a></li>
+                <li class = "item"><a href = "projects.html">Projects</a></li>
+                
+            </ul>
+
+        </div>
+
+        <div id="content-elec-prod">
+            <div id="bookmark-nav">
+                <h2><a class="book-nav" href="#E1">Electronic Production</a></h2>
+                <h2><a class="book-nav" href="#E2">Why make PCBs?</a></h2>
+                <h2><a class="book-nav" href="#E3">Process of CNC to PCB</a></h2>
+                <h2><a class="book-nav" href="#E4">In-Circuit Programmer</a></h2>
+                <h2><a class="book-nav" href="#E5">Process of miling the copper board</a></h2>
+            </div>
+
+            <div id="header-elec-prod">
+                <h1 id="E1">Electronic Production</h1>
+            </div>
+            <div id="main-elec-prod">
+                <p>On the first and second week, Mr Chew taught us how to fabricate our own PCBs in Fablab and how to prepare the files to send it to the PCB miling machine to mill the copper traces and outlines.</p>
+
+                <div id="E2">
+                    <h2>Why make PCBs?</h2>
+                    <p>I can make customized electronics for projects and prototypes.</p>
+                </div>
+
+                <div id="E3">
+                    <h2>Process of CNC to PCB</h2>
+                    <p>Here is the process of from designing the circuit to preparing the files to sending to a pcb miling machine.</p>
+                    <img src="images/Electronic_production/process of cnc and pcb.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                </div>
+
+                <div id="E4">
+                    <h2>In-Circuit Programmer</h2>
+                    <p>We were tasked to make a programmer so we will be making a FTDI & UPDI programmer circuit board. We need the UPDI programmer to upload firmware to the AVR 0/1/2 series devices. Mr Chew has already designed the outline and traces for the FTDI & UPDI.</p>
+                    <div class="elec-prod-images">
+                        <div class="FTDI-traces">
+                            <h3>FTDI traces</h3>
+                            <img src="images/Electronic_production/FTDI_traces.png" alt="FTDI traces" class="heightimg-270px" >
+
+                        </div>
+
+                        <div class="FTDI-outline">
+                            <h3>FTDI outline</h3>
+                            <img src="images/Electronic_production/FTDI_outline.png" alt="FTDI outline" class="heightimg-270px" >
+                            
+                        </div>
+
+                        <div class="UPDI-traces">
+                            <h3>UPDI traces</h3>
+                            <img src="images/Electronic_production/UPDI_traces.png" alt="UPDI traces" class="heightimg-270px" >
+                        </div>
+
+                        <div class="UPDI-outline">
+                            <h3>UPDI outline</h3>
+                            <img src="images/Electronic_production/UPDI_outline.png" alt="UPDI outline" class="heightimg-270px" >
+                            
+                        </div>
+
+                    </div>
+
+                    <h2>How to prepare the files?</h2>
+                    <ol>
+                        <li>First right click the 4 images one by one and save as traces or outlines respectively</li>
+
+                        <li>It should look like this after saving all the 4 images:</li>
+                        <img src="images/Electronic_production/files downloaded.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Next go to mod website which is created by Mr Steven Chew to help prepare the files for 2D CNC miling.</li>
+
+                        <li>Once you are in mods, right click to go to program &gt; open server program &gt; choose mill 2D PCB png. You will then see this screen:</li>
+                        <img src="images/Electronic_production/1 setup mods.png" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                        <li>Now, lets insert our FTDI traces first by clicking on to the select png file button</li>
+                        <img src="images/Electronic_production/2 select png file.png" alt="UPDI outline" class="heightimgwpad-400px-mid3" >
+
+                        <li>After that, in set PCB defaults, click mill traces (1/64) button to reset the settings mill raster 2D and it will be set for you.</li>
+                        <div class="elec-prod-images">
+                            <div class="before-reset">
+                                <h3>Before resetting</h3>
+                                <img src="images/Electronic_production/3 before reset.png" alt="UPDI outline" class="heightimg-270px" >
+                            </div>
+
+                            <div class="after-reset">
+                                <h3>After resetting</h3>
+                                <img src="images/Electronic_production/3 after reset.png" alt="FTDI outline" class="heightimg-270px" >
+                                
+                            </div>
+                        </div>
+
+                        <li>Next make sure the settings in path to G-code are correct</li>
+                        <img src="images/Electronic_production/4 path to g-code settings.png" alt="UPDI outline" class="heightimgwpad-400px-mid2" >
+
+                        <li>Once all those are correct you can then click calculate under mill raster 2D to start the process, you will see a sketch start to form and a nc file type will be downloaded which can be saved into your thumbdrive. You can click on view to see how the drawing is like after calculation.</li>
+                        <div class="elec-prod-images">
+                            <div class="Calculate">
+                                <h3>Calculate</h3>
+                                <img src="images/Electronic_production/5 calculate.png" alt="UPDI outline" class="heightimg-270px" >
+                            </div>
+
+                            <div class="nc-file">
+                                <h3>nc file downloaded after calculating</h3>
+                                <img src="images/Electronic_production/5 nc file.png" alt="FTDI outline" class="heightimg-180px" >
+                            </div>
+                        </div>
+
+                        <li>Now, lets insert our FTDI ouline by clicking on the select png file button again.</li>
+                        <img src="images/Electronic_production/6 select outline.png" alt="FTDI outline" class="heightimgwpad-400px-mid2" >
+
+                        <li>After that, in set PCB defaults click the mill outline (1/32) button to reset the settings mill raster 2D and it will be set for you.</li>
+
+                        <li>Settings in path to G-code will be the same as in Step 7.</li>
+
+                        <li>Once done click calculate and you will see a sketch start to form once again and another nc file will be downloaded</li>
+                        <img src="images/Electronic_production/9 outline nc file.png" alt="FTDI outline" class="heightimgwpad-100px" >
+
+                        <li>Do the same steps from 1 to 8 until you end up with 4 nc files for FDTI and UPDI</li>
+                        <img src="images/Electronic_production/10 all files.png" alt="FTDI outline" class="heightimgwpad-150px" >
+                    </ol>
+                </div>
+
+                <div id="E5">
+                    <h2>Process of Miling the PCB board</h2>
+                    <p>I forgot to take pictures of the process of doing the FDTI but the process of the UPDI is almost the same as doing the FDTI.</p>
+
+                    <p>After preparing the files we send it to the laptop which is connected to a PCB miling machine. Using the software, StepCraft, we can then mill our board</p>
+                    <img src="images/Electronic_production/stepcraft_software.jpg" alt="FTDI outline" class="heightimgwpad-400px-mid2" >
+
+                    <p>We used this copper board for our in-circuit programmer</p>
+                    <div class="elec-prod-images">
+                        <div class="copper-front">
+                            <h3>Front</h3>
+                            <img src="images/Electronic_production/copper_front.jpg" alt="UPDI outline" class="heightimg-400px" >
+                        </div>
+
+                        <div class="copper-back">
+                            <h3>Back</h3>
+                            <img src="images/Electronic_production/copper_back.jpg" alt="FTDI outline" class="heightimg-400px" >
+                            
+                        </div>
+                    </div>
+
+                    <p>Here is the 2 bits that we use for miling the traces and outlines</p>
+                    <img src="images/Electronic_production/diff_endmills.jpg" alt="UPDI outline" class="heightimgwpad-400px-mid3" >
+
+                    <p>Here are some pictures of the steps I took to make the in-circuit programmer:</p>
+                    <h3>Zeroing the bit</h3>
+                    <img src="images/Electronic_production/zeroing_milling.jpg" alt="UPDI outline" class="heightimg-270px" >
+
+                    <h3>Changing the drill bit</h3>
+                    <img src="images/Electronic_production/changing_endmill.jpg" alt="UPDI outline" class="heightimg-270px" >
+
+                    <h3>Milling in progress</h3>
+                    <div class="elec-prod-images">
+                        <div class="mill-traces">
+                            <p>Milling the traces</p>
+                            <img src="images/Electronic_production/progress_traces.jpg" alt="UPDI outline" class="heightimg-270px" >
+                        </div>
+
+                        <div class="mill-outline">
+                            <p>Milling the outline</p>
+                            <img src="images/Electronic_production/progress_outline.jpg" alt="FTDI outline" class="heightimg-270px" >
+                            
+                        </div>
+                    </div>
+
+                    <h3>Sanding the rough copper edges away</h3>
+                    <img src="images/Electronic_production/sanding.jpg" alt="UPDI outline" class="heightimg-270px" >
+
+                    <h3>Finished product of one of 2 boards. In this picture im showing the UPDI</h3>
+                    <div class="elec-prod-images">
+                        <div class="Before-sanding">
+                            <p>Before Sanding</p>
+                            <img src="images/Electronic_production/before_sanding.jpg" alt="UPDI outline" class="heightimg-270px" >
+                        </div>
+
+                        <div class="after-sanding">
+                            <p>After Sanding</p>
+                            <img src="images/Electronic_production/after_sanding.jpg" alt="FTDI outline" class="heightimg-270px" >
+                            
+                        </div>
+                    </div>
+
+                    <h3>Soldering the components</h3>
+                    <img src="images/Electronic_production/soldering.jpg" alt="UPDI outline" class="heightimg-270px" >
+                    
+                    <h3>Putting a 3D printed back piece for the Thumbdrive</h3>
+                    <img src="images/Electronic_production/3dprint_backpiece.jpg" alt="finished PCB" class="heightimg-270px" >
+
+
+                    <h3>Finished boards</h3>
+                    <img src="images/Electronic_production/finished_PCB.jpg" alt="finished PCB" class="heightimg-270px" >
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="footer">
+            Copyright &copy; 2022 Faith Kirsten De Vera.
+        </div>
+
+    </div>
+</body>
+</html>

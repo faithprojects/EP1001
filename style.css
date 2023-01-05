@@ -1,0 +1,634 @@
+/*MAIN PAGE*/
+body {
+    background-color: #FEF8EA;
+}
+
+a{
+    text-decoration: none;
+    color:#F6BC66;
+}
+
+#container {
+    background-color: #FEF8EA;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-logo img{
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 100px;
+    width: 80px;
+}
+
+#nav {
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+ul.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+li.item {
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: #F6BC66;
+    text-align: left;
+    padding: 20px 50px;
+}
+
+li a:hover {
+    color: #df8c17;
+    border-bottom: 4px solid #F6BC66;
+    
+}
+
+#content {
+    padding: 15px;
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+}
+
+#header-index{
+    color: #F6BC66;
+    text-align: left;
+    font-family: 'Signika', sans-serif;
+    font-size: 25px;
+    margin-right: 400px;
+    
+}
+
+.index-description {
+    padding: 30px;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin-right: 150px;
+}
+
+.index-table {
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 1px;
+    padding: 10px;
+}
+
+.learn-description {
+    padding: 30px;
+    font-size: 20px;
+    color: black;
+    text-align: right;
+    margin-left: 150px;
+}
+
+.learn-table {
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 1px;
+    padding: 10px;
+}
+
+#main {
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    font-size: 19px;
+}
+
+#Why-I-continue h1, #What-I-learn h1, #What-is-fablab h1 {
+    color: #F6BC66;
+}
+
+#Why-I-continue{
+    width: 1100px; 
+    margin: 0 auto;
+}
+
+div.continue-box {
+    margin: 5px 10px 50px 10px;
+    padding: 5px;
+    border: 8px solid #ffdba6;
+    background-color: #F6BC66;
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}
+
+.continue-box img {
+    width: 50%;
+    height: 90px;
+}
+
+div.continue-title {
+    
+    margin: 0;
+    font-size: 1em;
+    color: #FEF8EA;
+    line-height: 1.2;
+    width: 300px;
+    height: 130px;
+    margin: 5px;
+}
+
+
+#footer {
+    clear: both;
+    padding: 10px;
+    text-align: right;
+    background-color: #ffdba6;
+    color: #FEF8EA;
+    font-family: 'Signika', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*IMAGES SIZES*/
+.profile {
+    height: 400px;
+}
+
+.svg-profile {
+    height: 400px;
+    margin-left: 150px;
+}
+
+.svg-hello {
+    height: 250px;
+    margin-left: 100px;
+}
+
+.svg-teaching {
+    height: 350px;
+    margin-right: 200px;
+}
+
+.svg-brain {
+    margin-top: 50px;
+}
+
+.svg-tools {
+    margin-top: 15px;
+}
+
+.heightimg-270px {
+    height: 270px;
+}
+
+.heightimg-400px {
+    height: 400px;
+}
+
+.heightimgwpad-30px {
+    padding: 15px 0px 15px 0px;
+    height: 30px;
+}
+
+.heightimgwpad-50px {
+    padding: 15px 0px 15px 0px;
+    height: 50px;
+}
+
+.heightimgwpad-100px {
+    padding: 15px 0px 15px 0px;
+    height: 100px;
+}
+
+.heightimgwpad-150px {
+    padding: 15px 0px 15px 0px;
+    height: 150px;
+}
+
+.heightimgwpad-180px {
+    padding: 15px 0px 15px 0px;
+    height: 180px;
+}
+
+.heightimgwpad-200px {
+    padding: 15px 0px 15px 0px;
+    height: 200px;
+}
+
+.heightimgwpad-270px {
+    padding: 15px 0px 15px 0px;
+    height: 270px;
+}
+
+.heightimgwpad-400px {
+    padding: 15px 0px 15px 0px;
+    height: 400px;
+}
+
+.heightimgwpad-600px {
+    padding: 15px 0px 15px 0px;
+    height: 600px;
+}
+
+.heightimgwpad-400px-mid3 {
+    padding: 15px 0px 15px 0px;
+    height: 400px;
+    margin-left: 300px;
+
+}
+.heightimgwpad-400px-mid2 {
+    padding: 15px 0px 15px 0px;
+    height: 400px;
+    margin-left: 200px;
+
+}
+
+.heightimgwpad-270px {
+    padding: 15px 0px 15px 0px;
+    height: 270px;
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*ABOUT PAGE*/
+#content-about {
+    padding: 15px;
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+}
+
+#main-about {
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    font-size: 19px;
+}
+
+.about-description {
+    margin-left:150px;
+    padding: 30px;
+    font-size: 30px;
+    color: black;
+    text-align: left;
+}
+
+.about-description h1 {
+    color: #F6BC66;
+}
+
+.about-table {
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 1px;
+    padding: 10px;
+}
+
+.name-bold {
+    color: #f89809;
+}
+
+.aboutme-description {
+    padding: 30px;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+}
+
+.aboutme-table {
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 1px;
+    padding: 10px;
+}
+
+.student-agreement {
+    width: 700px;
+    margin: 0 auto;
+}
+.student-agreement ul {
+    text-align: left;
+}
+
+.student-agreement h1 , .about-me h1{
+    color: #F6BC66;
+    font-size: 50px;
+}
+
+.student-agreement h3 {
+    color: #f89809;
+
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*TOOLS PAGE*/
+#header{
+    color: #F6BC66;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    font-size: 25px;
+    
+}
+#main-tools{
+    width: 1300px; 
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 21px;
+}
+
+div.tools-box {
+    margin: 20px 45px 40px 45px;
+    padding: 2px;
+    border: 8px solid #ffdba6;
+    background-color: #F6BC66;
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}
+
+div.tools-box:hover {
+    border: 8px solid #F6BC66;
+    border-radius: 50px;
+}
+
+.tools-box img {
+    width: 50%;
+    height: 90px;
+}
+
+div.tools-title {
+    margin: 0;
+    font-size: 20px;
+    color: #FEF8EA;
+    margin: 5px;
+}
+
+div.tools-desc {
+    text-align: center;
+    font-weight: normal;
+    color: #FEF8EA;
+    line-height: 1.2;
+    width: 300px;
+    height: 100px;
+    margin: 5px;
+}
+
+.website-used-header {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+
+}
+
+div.website-box {
+    margin: 20px 45px 40px 45px;
+    padding: 5px;
+    border: 8px solid #ffdba6;
+    background-color: #F6BC66;
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}
+
+div.website-box:hover {
+    border: 8px solid #F6BC66;
+    border-radius: 50px;
+}
+
+.website-box img {
+    width: 50%;
+    height: 80px;
+}
+
+div.website-title {
+    margin: 0;
+    font-size: 20px;
+    color: #FEF8EA;
+    margin: 5px;
+}
+
+div.website-desc {
+    text-align: center;
+    font-weight: normal;
+    color: #FEF8EA;
+    line-height: 1.2;
+    width: 300px;
+    height: 100px;
+    margin: 5px;
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*PROJECT PAGE*/
+#main-project {
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    font-size: 18px;
+}
+
+.project-timeline{
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+}
+
+.project__component {
+    margin: 0 20px 20px 20px;
+}
+
+.project__component--bg {
+    padding: 1.5em;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #F6BC66;
+}
+
+.project__component--bottom {
+    margin-bottom: 0;
+}
+
+.project__week--right {
+    text-align: right;
+}
+
+.project__week--left {
+    text-align: left;
+}
+
+.bar__middle{
+    position: relative;
+    background-color: #F6BC66;
+}
+
+.bar__point{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: #F6BC66;
+    border-radius: 50%;
+}
+
+.bar__point--bottom {
+    top: initial;
+    bottom: 0;
+}
+
+.project-image img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px 10px 10px 10px;
+    box-sizing: border-box;
+}
+
+.project__title {
+    margin: 0;
+    color: #FEF8EA;
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*BOOKMARK FOR EACH PROJECT PAGE*/
+#bookmark-nav {
+    margin-left:70px;
+    width: 200px;
+    float: left;
+    position: fixed;
+}
+
+.book-nav:hover {
+    color: #df8c17;
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*ELECTRONIC PRODUCTION PAGE*/
+#content-elec-prod {
+    padding: 15px;
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+}
+
+#header-elec-prod{
+    color: #F6BC66;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    font-size: 17px;
+    float: right;
+    margin-right: 650px;
+}
+
+#main-elec-prod{
+    text-align: left;
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    width: 900px;
+    float: right;
+    margin-right: 370px;
+}
+
+.elec-prod-images {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2px;
+    padding: 10px;
+}
+
+.elec-prod-images > div {
+    text-align: center;
+    padding: 20px ;
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*ELECTRONIC DESIGN PAGE*/
+#content-elec-design {
+    padding: 15px;
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+}
+
+#header-elec-design{
+    color: #F6BC66;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    font-size: 17px;
+    float: right;
+    margin-right: 650px;
+}
+
+#main-elec-design{
+    text-align: left;
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    width: 900px;
+    float: right;
+    margin-right: 370px;
+}
+
+.elec-design-images {
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 2px;
+    padding: 10px;
+}
+
+.elec-design-images > div {
+    text-align: center;
+    padding: 20px ;
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*CNC PAGE*/
+#content-cnc {
+    padding: 15px;
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+}
+
+#header-cnc{
+    color: #F6BC66;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    font-size: 17px;
+    float: right;
+    margin-right: 650px;
+}
+
+#main-cnc{
+    text-align: left;
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    width: 900px;
+    float: right;
+    margin-right: 370px;
+}
+
+.cnc-images {
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 2px;
+    padding: 10px;
+}
+
+.cnc-images > div {
+    text-align: center;
+    padding: 20px ;
+}
+
+/*-----------------------------------------------------------------------*/

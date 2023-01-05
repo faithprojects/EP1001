@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>2D Computer Controlled Machining &amp; Routing</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="container">
+        <div class="my-logo"><img src="images/faith_newlogo.png" alt="faith logo"></div>
+        <div id="nav">
+            
+            <ul class="list">
+                
+                <li class = "item"><a href = "index.html">Home</a></li>
+                <li class = "item"><a href = "about.html">About Me</a></li>
+                <li class = "item"><a href = "tools.html">Tools</a></li>
+                <li class = "item"><a href = "projects.html">Projects</a></li>
+                
+            </ul>
+
+        </div>
+
+        <div id="content-cnc">
+            <div id="bookmark-nav">
+                <h2><a class="book-nav" href="#C1">2D Computer Controlled Machining &amp; Routing</a></h2>
+                <h2><a class="book-nav" href="#C2">How to make my soldering desk in Fusion360</a></h2>
+                <h2><a class="book-nav" href="#C3">Preparing the files to cnc using VCarve Pro</a></h2>
+                <h2><a class="book-nav" href="#C4">Practical Test</a></h2>
+                <h2><a class="book-nav" href="#C5">Process of using the CNC Machine</a></h2>
+            </div>
+
+            <div id="header-cnc">
+                <h1 id="C1">2D Computer Controlled Machining &amp; Routing</h1>
+            </div>
+            <div id="main-cnc">
+
+                <div id="C2">
+                    <h2>How to make my soldering desk in Fusion360</h2>
+                    <ol>
+                        <li>Firstly, I set the user parameters which I will then use for later which will help when I need to make adjustments to the measurement if ever I do need to adjust </li>
+                        <img src="images/cnc/1 user parameters.png" alt="FTDI traces" class="heightimg-270px" >
+
+                        <li>I created a new sketch and set the limits for how big of a space we are given for the plywood</li>                                
+                        <img src="images/cnc/2 limit sketch.png" alt="FTDI traces" class="heightimg-270px" >
+
+                        <li>I created another new sketch and started sketching out the soldering base</li>
+                        <div class="cnc-images">
+                            <div class="FTDI-traces">
+                                <img src="images/cnc/3 base sketch.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/cnc/3 soldering base sketch.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+                        <li>Once done, I extruded the soldering base to the thickness but not extruding the 2 holes as that will be what the stands will slot into</li>
+                        <img src="images/cnc/4 extrude.png" alt="FTDI traces" class="heightimg-270px" >
+
+                        <li>I then created a new sketch to make the stand starting with the left stand</li>
+                        <div class="cnc-images">
+                            <div class="FTDI-traces">
+                                <img src="images/cnc/5 side sketch.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/cnc/5 one stand sketch.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+                        <li>I then extruded the stand sketch starting from one of the side inner holes to start the extrude from there</li>
+                        <img src="images/cnc/6 extrude 2.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Then using combine tool, to make the slot holes on the stand</li>
+                        <div class="cnc-images">
+                            <div class="FTDI-traces">
+                                <img src="images/cnc/7 combine.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/cnc/7 after combine.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>Now we need to make the slots for the shelfs, so making a new sketch on the stand body we just made earlier I started sketching out the slots</li>
+                        <div class="cnc-images">
+                            <div class="FTDI-traces">
+                                <img src="images/cnc/8 slot sketch.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/cnc/8 stand slot sketch.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>Using the extrude tool we can cut away the slots</li>
+                        <img src="images/cnc/9 extrude 3.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Using the extrude tool again, we extrude the profile of the first stand to create another stand for the other side</li>
+                        <img src="images/cnc/10 extrude 4.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>We can now use the combine tool to make the holes on the other side of the soldering base so that the stand can slot in</li>
+                        <div class="cnc-images">
+                            <div class="FTDI-traces">
+                                <img src="images/cnc/11 combine 2.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/cnc/11 after combine.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>Making a new sketch on one of the stands, we can now sketch the shelfs</li>
+                        <div class="cnc-images">
+                            <div class="FTDI-traces">
+                                <img src="images/cnc/12 shelf sketch.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/cnc/12 shelf stand sketch.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>Using the extrude tool, extrude the breadth of the shelf</li>
+                        <img src="images/cnc/13 extrude 5.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>We can now make similar slots on the shelfs using the combine tool starting with one side of the shelf and doing the same with all the other sides using the combine tool</li>
+                        <div class="cnc-images">
+                            <div class="FTDI-traces">
+                                <img src="images/cnc/14 combine 3.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/cnc/14 after combine.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>Create a new sketch on top of the soldering base and sketch out the holes for the soldering iron and circle and the holes for containers</li>
+                        <div class="cnc-images">
+                            <div class="FTDI-traces">
+                                <img src="images/cnc/15 base hole sketch.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/cnc/15 holes for solder sketch.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>Using the extrude tool, we cut out the holes for the container and then for the soldering iron and circle</li>
+                        <div class="cnc-images">
+                            <div class="FTDI-traces">
+                                <img src="images/cnc/16 extrude 6.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/cnc/16 extrude 7.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>Creating a new sktech on the tool shelf, sketcching the holes for the tools</li>
+                        <div class="cnc-images">
+                            <div class="FTDI-traces">
+                                <img src="images/cnc/17 tools sketch.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/cnc/17 tool shelf sketch.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>Then cut the tool holes using extrude tool</li>
+                        <img src="images/cnc/18 extrude 8.png" alt="UPDI outline" class="heightimgwpad-180px" >
+
+                        <li>Using the fillet tool fillet some corners of my design</li>
+                        <div class="cnc-images">
+                            <div class="FTDI-traces">
+                                <img src="images/cnc/19 fillet.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/cnc/19 fillet corners.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+
+                            <div class="FTDI-traces">
+                                <img src="images/cnc/19 fillet 2.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/cnc/19 fillet corners 2.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>Lastly for each of the different body parts made create a new sketch and save as dxf which will be used later in the cnc software to cut out my design. You should end up with 5 different dxf files</li>
+                        <div class="cnc-images">
+                            <div class="FTDI-traces">
+                                <img src="images/cnc/20 create dxf sketch.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/cnc/20 save dxf.png" alt="UPDI outline" class="heightimgwpad-180px" >
+                                
+                            </div>
+
+                            <div class="FTDI-traces">
+                                <img src="images/cnc/20 all dxf.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                        </div>
+
+                        <li> Here is what my soldering desk will look like:</li>
+                        <img src="images/cnc/finished product.png" alt="FTDI traces" class="heightimg-270px" >
+
+
+                    </ol>
+                </div>
+
+                <div id="C3">
+                    <h2>Preparing the files to CNC using VCarve Pro</h2>
+                </div>
+
+                <div id="C4">
+                    <h2>Practical Test</h2>
+                    <p>We had to take a practical test to certify ourselves to be able to use the machine and to know how to use the CNC machine safely and what are the things we need to look out for when operating the CNC machine to be sure we won't injure ourselves.</p>
+
+                    <p>We each got to make our own coasters for the Practical Test.</p>
+                    <div class="cnc-images">
+                        <div class="FTDI-traces">
+                            <h3>When the cnc finished cutting out the coaster shape and now it needs sanding</h3>
+                            <img src="images/cnc/Prac_before.jpg" alt="FTDI traces" class="heightimg-270px" >
+
+                        </div>
+
+                        <div class="FTDI-outline">
+                            <img src="images/cnc/Prac_after.jpg" alt="UPDI outline" class="heightimgwpad-180px" >
+                            
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+                
+                <div id="C5">
+                    <h2>Process of using the CNC Machine</h2>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div id="footer">
+            Copyright &copy; 2022 Faith Kirsten De Vera.
+        </div>
+
+    </div>
+</body>
+</html>
