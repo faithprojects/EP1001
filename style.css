@@ -42,14 +42,14 @@ li.item {
     display: inline-block;
 }
 
-li a {
+.item-a {
     display: block;
     color: #F6BC66;
     text-align: left;
     padding: 20px 50px;
 }
 
-li a:hover {
+.item-a:hover {
     color: #df8c17;
     border-bottom: 4px solid #F6BC66;
     
@@ -365,6 +365,10 @@ div.tools-box:hover {
     height: 90px;
 }
 
+.portable-tools-img {
+    width: 20%
+}
+
 div.tools-title {
     margin: 0;
     font-size: 20px;
@@ -514,6 +518,19 @@ div.website-desc {
 
 .book-nav:hover {
     color: #df8c17;
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*WEBSITE LINKS*/
+.links {
+    color: #F6BC66;
+    font-weight: bold;
+}
+
+.links:hover {
+    color: #df8c17;
+    font-weight: bold;
 }
 
 /*-----------------------------------------------------------------------*/
@@ -685,6 +702,18 @@ div.website-desc {
     width: 900px;
     float: right;
     margin-right: 370px;
+}
+
+.mold-images {
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 2px;
+    padding: 10px;
+}
+
+.mold-images > div {
+    text-align: center;
+    padding: 20px ;
 }
 
 /*-----------------------------------------------------------------------*/
