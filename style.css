@@ -1,3 +1,5 @@
+/*-----------------------------------------------------------------------*/
+
 /*MAIN PAGE*/
 body {
     background-color: #FEF8EA;
@@ -629,6 +631,114 @@ div.website-desc {
 .cnc-images > div {
     text-align: center;
     padding: 20px ;
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*EMBEDDED PROGRAMMING PAGE*/
+#content-embed {
+    padding: 15px;
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+}
+
+#header-embed{
+    color: #F6BC66;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    font-size: 17px;
+    float: right;
+    margin-right: 650px;
+}
+
+#main-embed{
+    text-align: left;
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    width: 900px;
+    float: right;
+    margin-right: 370px;
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*MOLDING & CASTING, 3D MACHINING PAGE*/
+#content-molding {
+    padding: 15px;
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+}
+
+#header-molding{
+    color: #F6BC66;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    font-size: 17px;
+    float: right;
+    margin-right: 650px;
+}
+
+#main-molding{
+    text-align: left;
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    width: 900px;
+    float: right;
+    margin-right: 370px;
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*INTERFACE & APPLICATIONS PROGRAMMING PAGE*/
+#content-interface {
+    padding: 15px;
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+}
+
+#header-interface{
+    color: #F6BC66;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    font-size: 17px;
+    float: right;
+    margin-right: 650px;
+}
+
+#main-interface{
+    text-align: left;
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    width: 900px;
+    float: right;
+    margin-right: 370px;
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*FINAL PROJECT PAGE*/
+#content-finalproj {
+    padding: 15px;
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+}
+
+#header-finalproj{
+    color: #F6BC66;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    font-size: 17px;
+    float: right;
+    margin-right: 650px;
+}
+
+#main-finalproj{
+    text-align: left;
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    width: 900px;
+    float: right;
+    margin-right: 370px;
 }
 
 /*-----------------------------------------------------------------------*/
