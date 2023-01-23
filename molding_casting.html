@@ -20,11 +20,11 @@
             
             <ul class="list">
                 
-                <li class = "item"><a href = "index.html">Home</a></li>
-                <li class = "item"><a href = "about.html">About Me</a></li>
-                <li class = "item"><a href = "tools.html">Tools</a></li>
-                <li class = "item"><a href = "projects.html">Projects</a></li>
-                <li class = "item"><a href = "final_project.html">Final Project</a></li>
+                <li class = "item"><a class="item-a" href = "index.html">Home</a></li>
+                <li class = "item"><a class="item-a" href = "about.html">About Me</a></li>
+                <li class = "item"><a class="item-a" href = "tools.html">Tools</a></li>
+                <li class = "item"><a class="item-a" href = "projects.html">Projects</a></li>
+                <li class = "item"><a class="item-a" href = "final_project.html">Final Project</a></li>
                 
             </ul>
 
@@ -33,10 +33,13 @@
         <div id="content-molding">
             <div id="bookmark-nav">
                 <h2><a class="book-nav" href="#C1">Molding &amp; Casting, 3D Machining</a></h2>
-                <h2><a class="book-nav" href="#C2">How to make my soldering desk in Fusion360</a></h2>
-                <h2><a class="book-nav" href="#C3">Preparing the files to cnc using VCarve Pro</a></h2>
-                <h2><a class="book-nav" href="#C4">Practical Test</a></h2>
-                <h2><a class="book-nav" href="#C5">Process of using the CNC Machine</a></h2>
+                <h2><a class="book-nav" href="#C2">What is Molding &amp; Casting?</a></h2>
+                <h2><a class="book-nav" href="#C3">Making a Star Mold</a></h2>
+                <h2><a class="book-nav" href="#C4">Fusion360 Design &amp; Manufacturing of a Star Mold</a></h2>
+                <h2><a class="book-nav" href="#C5">Miling Process</a></h2>
+                <h2><a class="book-nav" href="#C6">Silicon Molding</a></h2>
+                <h2><a class="book-nav" href="#C7">Resin Casting</a></h2>
+
             </div>
 
             <div id="header-molding">
@@ -45,11 +48,338 @@
             <div id="main-molding">
 
                 <div id="C2">
+                    <h2>What is Molding &amp; Casting?</h2>
                     
                 </div>
 
+                <div id="C3">
+                    <h2>Making a Star Mold</h2>
+                    <p>I will be making a 1 part mini star mold.</p>
+                    
+                </div>
+
+                <div id="C4">
+                    <h2>Fusion360 Design &amp; Manufacturing of a Star Mold</h2>
+                    <h3>Fusion360 Design</h3>
+                    <ol>
+                        <li>Make a box sketch of 70 by 70mm</li>
+                        <img src="images/molding_casting/1 box sketch.png" alt="FTDI traces" class="heightimg-400px" >
+
+                        <li>Using the Extrude tool, Extrude the sketch to 30mm</li>
+                        <img src="images/molding_casting/2 extrude.png" alt="FTDI traces" class="heightimg-400px" >
+
+                        <li>Create a new sketch top box and offset by 5mm to create a wall for the mold</li>
+                        <div class="mold-images">
+                            <div class="FTDI-traces">
+                                <img src="images/molding_casting/3 sketch.png" alt="FTDI traces" class="heightimg-270px" >
+    
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/molding_casting/3 offset sketch.png" alt="UPDI outline" class="heightimgwpad-270px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>Using the Extrude tool, Extrude down the sketch by 25mm</li>
+                        <img src="images/molding_casting/4 extrude2.png" alt="FTDI traces" class="heightimg-400px" >
+
+                        <li>Create a new sketch to start sketching my star, I used this video to help me sketched out the star</li>
+                        <div class="mold-images">
+                            <div class="FTDI-traces">
+                                <img src="images/molding_casting/5 sketch.png" alt="UPDI outline" class="heightimgwpad-270px" >
+
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/molding_casting/5 star sketch.png" alt="UPDI outline" class="heightimgwpad-270px" >                                
+                            </div>
+
+                            <div class="FTDI-outline">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/5SobgJgljn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+
+                            </div>
+    
+                        </div>
+
+                        <li>Using the Extrude tool, Extruded the star.</li>
+                        <img src="images/molding_casting/6 extrude star.png" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                        <li>This is how my star mold looks like:</li>
+                        <img src="images/molding_casting/7 final star mold.png" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                    </ol>
+                    <h3>Fusion360 Manufacturing</h3>
+                    <ol>
+                        <li>First change the workspace to manufacturing</li>
+                        <img src="images/molding_casting/1 manufacturing.png" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                        <li>Then we want to setup the manufacturing process, so click on the setup icon</li>
+                        <img src="images/molding_casting/2 setup.png" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                        <li>We want to make sure that the arrows are in the middle of the box and in Work Coordinate System (WCS) the orientation should look like this:</li>
+                        <img src="images/molding_casting/3 setup2.png" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                        <li>For the Stock, make sure the mode is Relative size box and then u can click ok now ur mold is set </li>
+                        <img src="images/molding_casting/4 stock.png" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                        <li>Next, click on to adaptive clearing and under tool tab we will be using a 3mm flat endmill and follow settings for Coolant, Spindle speed and cutting feedrate in the image below: </li>
+                        <div class="mold-images">
+                            <div class="FTDI-traces">
+                                <img src="images/molding_casting/5 adapative.png" alt="UPDI outline" class="heightimgwpad-400px" >
+                            </div>
+    
+                            <div class="FTDI-outline">
+                                <img src="images/molding_casting/5 tool bit.png" alt="UPDI outline" class="heightimgwpad-400px" >
+                                
+                            </div>
+
+                            <div class="FTDI-outline">
+                                <img src="images/molding_casting/5 tool tab.png" alt="UPDI outline" class="heightimgwpad-400px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>For Geometry tab, tick the Stock Contours and select the inner line of the box</li>
+                        <img src="images/molding_casting/6 geometry.png" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                        <li>For Heights tab, I left the clearance, retract and top height as the default but changed the bottom height as I left 5mm at the bottom</li>
+                        <img src="images/molding_casting/7 heights.png" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                        <li>For Passes, follow the settings for Max roughing Stepdown, Fine Stepdown and tick the box for stock to leave and follow the settings for that too:</li>
+                        <img src="images/molding_casting/8 passes.png" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                        <li>For linking I did not change any of the settings so we can leave it as it is and click ok and it will start to generate the cams and wait until it is done</li>
+                        <li>Next is to do the finishing pass, so once the first adapative clearing process that u just did is done. click onto the adapative clearing icon again</li>
+                        <li>This time the settings for the tool tab is the same as in step 5</li>
+                        <li>But for Geometry tab, the setting is the same as in step 6 but this time we tick the rest machining too</li>
+                        <img src="images/molding_casting/12 geometry.png" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                        <li>For heights tab, we leave the settings as the default</li>
+                        <img src="images/molding_casting/13 heights.png" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                        <li>For Passes tab, we will untick the stock to leave box and change the Max roughing stepdown and fine stepdown</li>
+                        <img src="images/molding_casting/14 passes.png" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                        <li>For linking we can leave the settings as it is then click ok and wait for the cams to generate</li>
+                        <li> Once all the cams are done generating, you can simulate by right clicking the setup to simulate the whole process</li>
+                        <img src="images/molding_casting/16 simulate.png" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                        <li>Once done we can now post process the manufacting process but before that we need to install the post processor for the stepcraft UCCNC in fusion 360.</li>
+                        <!--Add link-->
+                        <li>Click this <a class="links" href="https://cam.autodesk.com/hsmposts?" target="_blank">post processor link</a> that will bring you straight to download the post processor for stepcraft CNC. This other <a class="links" href="https://knowledge.autodesk.com/support/fusion-360/learn-explore/caas/sfdcarticles/sfdcarticles/How-to-add-a-Post-Processor-to-your-Personal-Posts-in-Fusion-360.html" target="_blank">instructions link</a>  shows you the steps to install the post processor too.</li>
+                        <li>After you have installed the post processor into Fusion360, you can right click the setup and click post process</li>
+                        <img src="images/molding_casting/19 PostProcess.png" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                        <li>Then follow the settings for the post process and then click post in order to get a nc file of your mold design</li>
+                        <img src="images/molding_casting/20 PostProcess_Settings.png" alt="UPDI outline" class="heightimgwpad-400px" >
+                        <img src="images/molding_casting/star mold nc file.png" alt="UPDI outline" class="heightimgwpad-30px" >
+
+                    </ol>
+                    
+                </div>
+
+                <div id="C5">
+                    <h2>Miling Process</h2>
+                    <p>I first cut my styrofoam stock with a 50mm thickness &amp; a 60mm by 60mm square using pen knife. Using double sided tape, I taped the bottom of the stock and use it to stick on to the sacrificial board of the milling machine.</p>
+                    <img src="images/molding_casting/styrofoam stock.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                    <p>Then I marked the center point of the stock.</p>
+                    <img src="images/molding_casting/center point.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                    <p>Then using the stepcraft software, setting my X and Y axis to the center of the styrofoam stock and then setting my Z axis. Im using a 3mm end mill bit.</p>
+                    <img src="images/molding_casting/3mm_endmil.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                    <p>My first try was unsuccessful as the stock size that I cut was too small which made the sides of the wall too thin.</p>
+                    <div class="mold-images">
+                        <div class="FTDI-traces">
+                            <img src="images/molding_casting/milling progress.jpg" alt="FTDI traces" class="heightimg-400px" >
+
+                        </div>
+
+                        <div class="FTDI-outline">
+                            <img src="images/molding_casting/first try.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+                            
+                        </div>
+
+                    </div>
+
+                    <p>So my second try, I cut the stock bigger 100mm by 100mm and this time it worked better than the first try</p>
+                    <p>But it started to make a loud screeching sound because the 3mm end mill bit was not long enough so I had to cut some of the top part of the stryofoam but it ended up not coming out right.</p>
+                    <div class="mold-images">
+                        <div class="FTDI-traces">
+                            <img src="images/molding_casting/secondfail.jpg" alt="FTDI traces" class="heightimg-400px" >
+
+                        </div>
+
+                        <div class="FTDI-outline">
+                            <img src="images/molding_casting/second try.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+                            
+                        </div>
+
+                    </div>
+                    
+                    <p>So on my third try I cut some of the top part of the stryofoam before milling it but while milling it still needed to be cut away so I cut diagonally as it was much easier than cutting it straight.</p>
+                    <img src="images/molding_casting/third try.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                </div>
+
+                <div id="C6">
+                    <h2>Silicon Molding</h2>
+                    <p>For the silicon Molding, I will be using the Silicon rubber RTV-620. It has 2 parts A and B. It is important for us to read the datasheet to know the mix ratio, pot life and cure time of the silicon. Make sure to also prepare the table by using plastic sheets to cover up the table as it can get abit messy and remember to wear gloves.</p>
+                    <div class="mold-images">
+                        <div class="FTDI-traces">
+                            <img src="images/molding_casting/silicon_datasheet.png" alt="FTDI traces" class="heightimg-400px" >
+
+                        </div>
+
+                        <div class="FTDI-outline">
+                            <img src="images/molding_casting/silicon.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+                            
+                        </div>
+
+                    </div>
+
+                    <p>First I pour Part A first into a cup and using the measuring scale to measure the amount I needed.</p>
+                    <div class="mold-images">
+                        <div class="FTDI-traces">
+                            <img src="images/molding_casting/Part A.jpg" alt="FTDI traces" class="heightimg-400px" >
+
+                        </div>
+
+                        <div class="FTDI-outline">
+                            <img src="images/molding_casting/Part A2.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+                            
+                        </div>
+
+                    </div>
+
+                    <p>Next, I poured Part B into a different cup and using the same measuring scale to measure the amount needed. Make sure that both Part A and Part B are of equal amounts.</p>
+                    <div class="mold-images">
+                        <div class="FTDI-traces">
+                            <img src="images/molding_casting/Part B.jpg" alt="FTDI traces" class="heightimg-400px" >
+
+                        </div>
+
+                        <div class="FTDI-outline">
+                            <img src="images/molding_casting/Part B2.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+                            
+                        </div>
+
+                    </div>
+
+                    <p>Then I have to combine Part B into Part A so that I can mix it together. Then I slowly mix the mixture as you don't want to mix too fast and let air bubbles in but I have to make sure that mix it slowly and making sure the mixture is well combined but also keeping track of how much pot life time I have.</p>
+                    <div class="mold-images">
+                        <div class="FTDI-traces">
+                            <img src="images/molding_casting/combine.jpg" alt="FTDI traces" class="heightimg-400px" >
+
+                        </div>
+
+                        <div class="FTDI-outline">
+                            <img src="images/molding_casting/mixing.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+                            
+                        </div>
+
+                    </div>
+
+                    <p>Next, it was time to start pouring the mixture onto my styrofoam mold. I start pouring from the corner and pouring it slowly and letting the mixture flow into the mold itself.</p>
+                    <div class="mold-images">
+                        <div class="FTDI-traces">
+                            <img src="images/molding_casting/pour.jpg" alt="FTDI traces" class="heightimg-400px" >
+
+                        </div>
+
+                        <div class="FTDI-outline">
+                            <img src="images/molding_casting/pour2.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+                            
+                        </div>
+
+                        <div class="FTDI-outline">
+                            <img src="images/molding_casting/pour3.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+                            
+                        </div>
+
+                    </div>
+
+                    <p>Here is my finished Silicon pour and now we have to let it cure.</p>
+                    <img src="images/molding_casting/finish_pouring.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
 
 
+                    <p>The following week, it was done curing and this is how it looked like:</p>
+                    <img src="images/molding_casting/after curing.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+
+
+                    <p>I then proceeded to take it of the styrofoam mold but it was hard to take out as I did not spray on mold release before pouring the silicon which I had no choice but to break the styrofoam mold but the Silicon mold turned out great!</p>
+                    <div class="mold-images">
+                        <div class="FTDI-traces">
+                            <img src="images/molding_casting/break styrofoam.jpg" alt="FTDI traces" class="heightimg-400px" >
+
+                        </div>
+
+                        <div class="FTDI-outline">
+                            <img src="images/molding_casting/silicon mold.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+                            
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <div id="C7">
+                    <h2>Resin Casting</h2>
+                    <p>For the resin casting, I will be using Smooth Cast 305. Same thing with the silicon, we have to take note of the mix ratio, pot life and cure time for the resin. Make sure the table is well prepared and wear rubber gloves.</p>
+                    <div class="mold-images">
+                        <div class="FTDI-traces">
+                            <img src="images/molding_casting/resin datasheet.jpg" alt="FTDI traces" class="heightimg-400px" >
+
+                        </div>
+
+                        <div class="FTDI-outline">
+                            <img src="images/molding_casting/resin.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+                            
+                        </div>
+
+                    </div>
+
+                    <p>First I pour Part A first into a silicon cup and using the silicon cup with volume measurements on it to measure the amount I needed.</p>
+                    <img src="images/molding_casting/resin Part A.jpg" alt="FTDI traces" class="heightimg-400px" >
+
+                    <p>Next, I poured Part B into a different silicon cup and measure the amount needed. Make sure that both Part A and Part B are of equal amounts.</p>
+                    <img src="images/molding_casting/resin Part B.jpg" alt="FTDI traces" class="heightimg-400px" >
+
+                    <p>Then I have to combine Part B into Part A so that I can mix it together. Then I slowly mix the mixture making sure not to mix too fast and let air bubbles in and making sure the mixture is well combined but also keeping track of how much pot life time I have.</p>
+                    <div class="mold-images">
+                        <div class="FTDI-traces">
+                            <img src="images/molding_casting/resin Part A and B.jpg" alt="FTDI traces" class="heightimg-400px" >
+
+                        </div>
+
+                        <div class="FTDI-outline">
+                            <img src="images/molding_casting/resin combine.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+                            
+                        </div>
+
+                        <div class="FTDI-outline">
+                            <img src="images/molding_casting/mixing resin.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+                            
+                        </div>
+
+                    </div>
+
+                    <p>Next, it was time to start pouring the mixture onto my silicon mold. I start pouring from the corner and pouring it slowly and letting the mixture flow into the mold itself.</p>
+                    <img src="images/molding_casting/pour resin.jpg" alt="FTDI traces" class="heightimg-400px" >
+
+                    <p>Here is my finished resin pour and now we have to let it cure.</p>
+                    <img src="images/molding_casting/finish resin.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+
+
+                    <p>The following week, it was done curing and this is how it looked like and the resin mold turned out great:</p>
+                    <!--Add image-->
+                    <img src="images/molding_casting/after curing.jpg" alt="UPDI outline" class="heightimgwpad-400px" >
+
+                </div>
 
             </div>
         </div>
