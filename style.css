@@ -778,4 +778,32 @@ div.website-desc {
     margin-right: 370px;
 }
 
+.finalproj-images {
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 2px;
+    padding: 10px;
+}
+
+.finalproj-images > div {
+    text-align: center;
+    padding: 20px ;
+}
+
+table {
+    width: 100%;
+    
+}
+
+td, th {
+text-align: left;
+padding: 8px;
+border: 1px solid white;
+border-collapse: collapse;
+background-color:#ffdba6;
+}
+
+tr {
+height: 5px;
+}
 /*-----------------------------------------------------------------------*/
