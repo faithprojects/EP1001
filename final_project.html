@@ -37,7 +37,7 @@
                 <h2><a class="book-nav" href="#C3">Materials</a></h2>
                 <h2><a class="book-nav" href="#C4">Fabrication Techniques</a></h2>
                 <h2><a class="book-nav" href="#C5">CAD Modeling</a></h2>
-                <h2><a class="book-nav" href="#C6">PCB Milling</a></h2>
+                <h2><a class="book-nav" href="#C6">PCB Fabrication</a></h2>
                 <h2><a class="book-nav" href="#C7">Electronics</a></h2>
                 <h2><a class="book-nav" href="#C8">CNC Milling</a></h2>
                 <h2><a class="book-nav" href="#C9">Laser Cutting</a></h2>
@@ -49,11 +49,6 @@
                 <h2><a class="book-nav" href="#C15">Reflection</a></h2>
                 <h2><a class="book-nav" href="#C16">Presentation Slide</a></h2>
                 <h2><a class="book-nav" href="#C17">Video</a></h2>
-
-
-
-
-
             </div>
 
             <div id="header-finalproj">
@@ -62,9 +57,368 @@
             <div id="main-finalproj">
 
                 <div id="C2">
+                    <h2>Project Idea</h2>
+
+                    <p>After getting some inspiration from ILTMS escape room puzzle and KOR escape puzzle box, I decided to make a Solve the puzzle safe box. If you will be able to solve the puzzle before the time runs out to uncover what is inside the safe box? It sounded like a cool mini game to me to play with friends like an actual escape room but also a fun way to store some things in the safe box that someone has to figure out how to open it.</p>
+                    <div class="finalproj-images">
+                        <div class="final-1">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/BAET0jWxNXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="final-2">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/kHqFkIgVF3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            
+                        </div>
+
+                    </div>
+
+                    <p>I made 2 sketches of how my safe box will look like and end up going with the second sketch for the design of the safe box.</p>
+                    <div class="finalproj-images">
+                        <div class="final-1">
+                            <img src="images/final_project/sketch1.jpg" alt="base sketch" class="heightimg-270px" >
+
+                        </div>
+
+                        <div class="final-2">
+                            <img src="images/final_project/sketch2.jpg" alt="soldering base sketch" class="heightimg-270px" >
+                            
+                        </div>
+
+                    </div>
+
+                    <p>I only had doubts about what type of microcontroller I would be using as I have quite a number of inputs and outputs. So, I consulted Mr Steven to help me figure out what microcontroller to use. He helped me draw out and visualize the inputs and outputs that would be connected to the microcontroller and from there we were able to figure out that a ATTiny412 microcontroller would work just fine.</p>
+                    <img src="images/final_project/microcontroller_design.jpg" alt="soldering base sketch" class="heightimg-270px" >
+
                     
                 </div>
 
+                <div id="C3">
+                    <h2>Materials</h2>
+                    <table>
+                        <tr>
+                            <th>Quantity</th>
+                            <th>Description</th>
+                            <th>Cost</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>ATTiny412 microchip</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>SMD 10K Resistors</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>SMD Capacitor</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>SMD AMS1117 Voltage Regulator</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>SMD Right Angle Male Header (5 pieces of 2 pin header &amp; 3 pieces of 3 pin header)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Reed Switch</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Push Button</td>
+                            <td>SGD 0.50 per button</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Slide Switch</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Neodynium Magnets</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Battery Holder</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>AA Batteries</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Servo Motor</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Male to Male Dupont cables</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Male to Female Dupont cables</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>A3 size 3mm White Acrylic</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>25mm thick Plywood</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Strips of neopixel LEDs (5 LEDs in each strip)</td>
+                            <td>SGD 7.72 for 1 meter strip of neopixels (30 Leds) IP67</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <div id="C4">
+                    <h2>Fabrication Techniques</h2>
+                    <table>
+                        <tr>
+                            <th>Technique</th>
+                            <th>Makes</th>
+                        </tr>
+                        <tr>
+                            <td>CAD Design</td>
+                            <td>Safe Box Design, Electronic Box Design, Puzzle Pieces Design, Servo Motor Lock &amp; Case Hole Piece Design, Tracks Design</td>
+                        </tr>
+                        <tr>
+                            <td>PCB Fabrication</td>
+                            <td>Electronics Design</td>
+                        </tr>
+                        <tr>
+                            <td>CNC Milling</td>
+                            <td>Safe Box</td>
+                        </tr>
+                        <tr>
+                            <td>3D Printing</td>
+                            <td>Puzzle Pieces, Servo Motor Lock &amp; Case Hold Piece, Tracks</td>
+                        </tr>
+                        <tr>
+                            <td>Laser Cutting</td>
+                            <td>Electronic Box</td>
+                        </tr>
+                        <tr>
+                            <td>Processing System</td>
+                            <td>ATTiny412</td>
+                        </tr>
+                        <tr>
+                            <td>Input Devices</td>
+                            <td>Push Button, Reed Switches, Slide Switch</td>
+                        </tr>
+                        <tr>
+                            <td>Output Devices</td>
+                            <td>Neopixels, Servo Motor</td>
+                        </tr>
+                        <tr>
+                            <td>Power</td>
+                            <td>x4 AA Battery Holder</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <div id="C5">
+                    <h2>CAD Modeling</h2>
+                    
+
+                </div>
+
+                <div id="C6">
+                    <h2>PCB Fabrication</h2>
+                    <p>So I started drawing out my schematic on EAGLE software to design my microcontroller with the components ill be using. Here is the schematic and PCB drawing: </p>
+                    <div class="finalproj-images">
+                        <div class="final-1">
+                            <img src="images/final_project/schematic_design.png" alt="base sketch" class="heightimg-270px" >
+
+                        </div>
+
+                        <div class="final-2">
+                            <img src="images/final_project/pcb_design.png" alt="soldering base sketch" class="heightimg-270px" >
+                            
+                        </div>
+
+                    </div>
+
+                    <p>This is how the traces and outline look like: </p>
+                    <div class="finalproj-images">
+                        <div class="final-1">
+                            <img src="images/final_project/FinalProj_traces3.png" alt="base sketch" class="heightimg-270px" >
+
+                        </div>
+
+                        <div class="final-2">
+                            <img src="images/final_project/FinalProj_outline3.png" alt="soldering base sketch" class="heightimg-270px" >
+                            
+                        </div>
+
+                    </div>
+
+                    <p>I millied the traces using a new 30 degree endmil and new outline endmil and it turned out looking great and I didn't have to sand the burrs because the endmil is new. </p> 
+                    <div class="finalproj-images">
+                        <div class="final-1">
+                            <h3>Endmills used</h3>
+                            <img src="images/final_project/endmils used.jpg" alt="base sketch" class="heightimg-270px" >
+
+                        </div>
+
+                        <div class="final-2">
+                            <img src="images/final_project/mill1.jpg" alt="soldering base sketch" class="heightimg-270px" >
+                            
+                        </div>
+
+                        <div class="final-3">
+                            <img src="images/final_project/mill2.jpg" alt="soldering base sketch" class="heightimg-270px" >
+                            
+                        </div>
+
+                        <div class="final-4">
+                            <img src="images/final_project/mill3.jpg" alt="soldering base sketch" class="heightimg-270px" >
+                            
+                        </div>
+
+                        <div class="final-5">
+                            <img src="images/final_project/finish mill.jpg" alt="soldering base sketch" class="heightimg-270px" >
+                            
+                        </div>
+
+                    </div>
+                    
+                    <p>But there were some parts of the traces that was not cut properly so I used a pen knife to separate the parts: </p>
+                    <img src="images/final_project/pen knife mill.jpg" alt="soldering base sketch" class="heightimg-270px" >
+
+
+                </div>
+
+                <div id="C7">
+                    <h2>Electronics</h2>
+                    
+
+                </div>
+
+                <div id="C8">
+                    <h2>CNC Milling</h2>
+                    <p>So when doing the CNC, I had to change the thickness of my plywood from 18mm to 24mm as that is what the school had. Here are some pictures on the day when I did the CNC</p>
+                    <div class="finalproj-images">
+                        <div class="final-1">
+                            <img src="images/final_project/cnc1.jpg" alt="base sketch" class="heightimg-270px" >
+
+                        </div>
+
+                        <div class="final-2">
+                            <img src="images/final_project/cnc2.jpg" alt="soldering base sketch" class="heightimg-270px" >
+                            
+                        </div>
+
+                        <div class="final-3">
+                            <img src="images/final_project/cnc3.jpg" alt="soldering base sketch" class="heightimg-270px" >
+                            
+                        </div>
+
+                    </div>
+                        
+                    <p>After cutting the CNC safe box I realized that it could not fit the finger joints together properly. So using the sander I tried to sand the sides and but it couldn't get into the inner joints so I had to figure out another way to sand the sides.</p>
+                    <div class="finalproj-images">
+                        <div class="final-1">
+                            <img src="images/final_project/sanding cnc.jpg" alt="base sketch" class="heightimg-270px" >
+
+                        </div>
+
+                        <div class="final-2">
+                            <img src="images/final_project/FinalProj_outline3.png" alt="soldering base sketch" class="heightimg-270px" >
+                            
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+                
+                <div id="C9">
+                    <h2>Laser Cutting</h2>
+                    <p>Using a A3 3mm white acrylic piece, I laser cut my electronic box which turned out looking great on the first try.</p>
+                    <div class="finalproj-images">
+                        <div class="final-1">
+                            <img src="images/final_project/process laser.jpg" alt="base sketch" class="heightimg-270px" >
+
+                        </div>
+
+                        <div class="final-2">
+                            <img src="images/final_project/finish laser.jpg" alt="soldering base sketch" class="heightimg-270px" >
+                            
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+
+                <div id="C10">
+                    <h2>3D Printing</h2>
+                    
+
+                </div>
+
+                <div id="C11">
+                    <h2>Code</h2>
+                    
+
+                </div>
+
+                <div id="C12">
+                    <h2>Assembly of Product</h2>
+                    
+
+                </div>
+
+                <div id="C13">
+                    <h2>Final Product</h2>
+                    
+
+                </div>
+
+                <div id="C14">
+                    <h2>Files</h2>
+                    
+
+                </div>
+
+                <div id="C15">
+                    <h2>Reflection</h2>
+                    
+
+                </div>
+
+                <div id="C16">
+                    <h2>Presentation Slide</h2>
+                    
+
+                </div>
+
+                <div id="C17">
+                    <h2>Video</h2>
+                    
+
+                </div>
+>
 
 
 
