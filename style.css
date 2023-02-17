@@ -185,6 +185,14 @@ div.continue-title {
     margin-top: 15px;
 }
 
+.heightimg-100px {
+    height: 100px;
+}
+
+.heightimg-180px {
+    height: 180px;
+}
+
 .heightimg-270px {
     height: 270px;
 }
