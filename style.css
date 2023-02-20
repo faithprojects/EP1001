@@ -634,7 +634,7 @@ div.website-desc {
     font-family: 'Signika', sans-serif;
     font-size: 17px;
     float: right;
-    margin-right: 650px;
+    margin-right: 450px;
 }
 
 #main-cnc{
@@ -683,6 +683,18 @@ div.website-desc {
     width: 900px;
     float: right;
     margin-right: 370px;
+}
+
+.embprog-images {
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 2px;
+    padding: 10px;
+}
+
+.embprog-images > div {
+    text-align: center;
+    padding: 20px ;
 }
 
 /*-----------------------------------------------------------------------*/
