@@ -33,18 +33,109 @@
         <div id="content-embed">
             <div id="bookmark-nav">
                 <h2><a class="book-nav" href="#C1">Embedded Programming</a></h2>
-                <h2><a class="book-nav" href="#C2">How to make my soldering desk in Fusion360</a></h2>
-                <h2><a class="book-nav" href="#C3">Preparing the files to cnc using VCarve Pro</a></h2>
-                <h2><a class="book-nav" href="#C4">Practical Test</a></h2>
-                <h2><a class="book-nav" href="#C5">Process of using the CNC Machine</a></h2>
+                <h2><a class="book-nav" href="#C2">ATTiny412 Pinout Sheet</a></h2>
+                <h2><a class="book-nav" href="#C3">Let's Get Started: How to install ATTiny412 board into Arduino</a></h2>
+                <h2><a class="book-nav" href="#C4">Connect and test your ATTiny412 board</a></h2>
+                <h2><a class="book-nav" href="#C5">Make a Program using the ATTiny412 board</a></h2>
             </div>
 
             <div id="header-embed">
                 <h1 id="C1">Embedded Programming</h1>
             </div>
             <div id="main-embed">
+                <p>On the 7th week, after making our ATTiny412 boards, Mr Chew taught us how to install the ATTiny412 board into Arduino, how to test it and how to connect the board.</p>
 
                 <div id="C2">
+                    <h2>ATTiny412 Pinout Sheet</h2>
+                    <p>This is the ATTiny-412 Pinout Sheet for reference and we would need this in trying to refer to our connections.</p>
+                    <img src="images/embedded_prog/attiny pinout.png" alt="soldering base sketch" class="heightimg-270px" >
+
+                    
+                </div>
+
+                <div id="C3">
+                    <h2>Let's Get Started: How to install ATTiny412 board into Arduino</h2>
+                    <p>We would first need to be able to use the ATTiny412 board on the Arduino. To do that we need to install the board into Arduino</p>
+                    <ol>
+                        <li>First click this <a class="links" href="https://github.com/SpenceKonde/ATTinyCore" target="_blank">github link</a> which will send you straight to Spence Konde's github to install the board</li>
+                        <li>Scroll down until you see the Installation Button in Blue text</li>
+                        <img src="images/embedded_prog/2 installation.png" alt="soldering base sketch" class="heightimg-270px" >
+
+                        <li>You will then see the Boards Manager Installation which you will need to copy the URL</li>
+                        <img src="images/embedded_prog/3 boards manager install.png" alt="soldering base sketch" class="heightimg-270px" >
+
+                        <li>Then, open your Arduino IDE and go to File &gt; Preferences</li>
+                        <img src="images/embedded_prog/4 arduino_preferences.png" alt="soldering base sketch" class="heightimg-270px" >
+
+                        <li>In Preferences, Under Additional Boards Managers URLs click the button on the right side</li>
+                        <img src="images/embedded_prog/5 preferences.png" alt="soldering base sketch" class="heightimg-270px" >
+
+                        <li>Then paste the URL you copied in Step 3, and click ok</li>
+                        <img src="images/embedded_prog/6 URL paste.png" alt="soldering base sketch" class="heightimg-270px" >
+
+                        <li>You should then be able to see megaTinyCore if you go to Tools &gt; Board</li>
+                        <img src="images/embedded_prog/7 tools.png" alt="soldering base sketch" class="heightimg-270px" >
+
+                    </ol>
+
+                </div>
+
+                <div id="C4">
+                    <h2>Connect and test your ATTiny412 board</h2>
+                    <p>We now need to setup the ATTiny412 board and to burn the bootloader before we can test the board. But first we need to connect the ATTiny412 board to the FTDI and UDPI that we made in <a class="links" href="elec_prod.html" target="_blank">Electronic Production Page</a>.</p>
+                    <ol>
+                        <li>Take your FTDI and UDPI and connect it to your ATtiny42 board in this way: (make sure you check and connect the VCC and GND correctly check your PCB design to see where is your VCC and GND in your design)</li>
+                        <img src="images/embedded_prog/1 connection_blinkled.jpg" alt="soldering base sketch" class="heightimg-270px" >
+
+                        <li>Plug your FTDI into your computer. Then, Go to Tools &gt; Board &gt; megaTinyCore and select ATtiny412&#47;402&#47;212&#47;202. Then go to port and select the port that your FTDI is connected to, for me my port is COM3 but you can find out using device manager on your computer to see the port that your FTDI is connected</li>
+                        <div class="embprog-images">
+                            <div class="prog-1">
+                                <img src="images/embedded_prog/2 tools board.png" alt="base sketch" class="heightimg-180px" >
+    
+                            </div>
+    
+                            <div class="prog-2">
+                                <img src="images/embedded_prog/2 port.png" alt="soldering base sketch" class="heightimg-270px" >
+                                
+                            </div>
+    
+                        </div>
+
+                        <li>Then follow the settings below, after you have done setting up the setting below click burn bootloader. You only burn the bootloader if you made any changes to the settings</li>
+                        <img src="images/embedded_prog/3 attiny_412 tools.png" alt="soldering base sketch" class="heightimg-270px" >
+
+                        <li>You will the see at the bottom that the bootloader is running and it will display this message when it is done bootloading</li>
+                        <img src="images/embedded_prog/4 done bootloader.png" alt="soldering base sketch" class="heightimg-270px" >
+
+                        <li>You can then create your very first program to test the led on your attiny412. We want to blink the led to show that it is working. You can follow the code at the bottom to blink led on the attiny412. Refer to the pinout sheet on where your led is connected to on your attiny412 board</li>
+                        <img src="images/embedded_prog/5 code blink led.png" alt="soldering base sketch" class="heightimg-270px" >
+
+                        <li>Then you can click the tick (Verify) and the arrow (Upload) buttons to run the code</li>
+                        <img src="images/embedded_prog/6 upload.png" alt="soldering base sketch" class="heightimg-270px" >
+
+                        <li>This is the result you should get: </li>
+                        <img src="images/embedded_prog/blinkled_AdobeExpress (2).gif" alt="soldering base sketch" class="heightimg-270px" >
+                    </ol>
+                    
+                </div>
+
+                <div id="C5">
+                    <h2>Make a Program using the ATTiny412 board</h2>
+                    <p>I decided to make a program using the button on my Attiny412 board to light up the led and display on the serial monitor if the led is on or off.</p>
+
+                    <p>Here is the code I made to perform the program</p>
+                    <img src="images/embedded_prog/programcode.png" alt="soldering base sketch" class="heightimg-270px" >
+
+                    <p>After running the code into the attiny412, it does not work because I have to change the connection. So I unplugged and I took out the UDPI leaving to connect the FTDI to the ATtiny412 board in this way: </p>
+                    <img src="images/embedded_prog/connection_programcode.jpg" alt="soldering base sketch" class="heightimg-270px" >
+
+                    <p>Then, I open up the serial monitor on the top right hand corner</p>
+                    <img src="images/embedded_prog/Open SM.png" alt="soldering base sketch" class="heightimg-270px" >
+
+                    <p>And this is what the working result looks like: </p>
+                    <video width="920" height="540" autoplay muted controls loop>
+                        <source src="images/embedded_prog/working_programcode_AdobeExpress(1).mp4" type="video/mp4">
+                    </video>
                     
                 </div>
 
