@@ -543,6 +543,36 @@ div.website-desc {
 
 /*-----------------------------------------------------------------------*/
 
+/*SOURCE FILE LINKS*/
+div.file-box {
+    margin: 20px 25px 20px 25px;
+    padding: 2px;
+    border: 8px solid #ffdba6;
+    background-color: #F6BC66;
+    border-radius: 20px;
+    height: 110px;
+    width: 250px;
+    float: left;
+    text-align: center;
+}
+
+div.file-box:hover {
+    border: 8px solid #F6BC66;
+    border-radius: 20px;
+}
+
+div.file-title {
+    margin: 0;
+    font-size: 18px;
+    color: #FEF8EA;
+    margin: 5px;
+}
+
+.title-a {
+    color: #FEF8EA;
+}
+/*-----------------------------------------------------------------------*/
+
 /*ELECTRONIC PRODUCTION PAGE*/
 #content-elec-prod {
     padding: 15px;
@@ -761,6 +791,18 @@ div.website-desc {
     width: 900px;
     float: right;
     margin-right: 370px;
+}
+
+.interprog-images {
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 2px;
+    padding: 10px;
+}
+
+.interprog-images > div {
+    text-align: center;
+    padding: 20px ;
 }
 
 /*-----------------------------------------------------------------------*/
